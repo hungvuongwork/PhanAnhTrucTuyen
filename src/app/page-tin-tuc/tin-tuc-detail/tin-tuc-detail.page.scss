@@ -1,0 +1,25 @@
+@import '../tin-tuc/tin-tuc.component.scss';
+
+.hm-tintucdetail {
+  --background: #E5E5E5;
+}
+
+.hm-tintucdetail-content {
+  @extend .bg-white;
+  padding-bottom: 0;
+  margin-bottom: $p-m-8;
+
+  p {
+    margin-top: $p-m-8;
+  }
+}
+
+.hm-tintuc-smalltitle {
+  margin-top: 0;
+  font-size: $font-size-14;
+  opacity: 0.54;
+}
+
+.hm-tintuc-relatenews {
+  @extend .bg-white;
+}

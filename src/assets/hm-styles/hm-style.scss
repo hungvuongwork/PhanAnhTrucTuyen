@@ -24,3 +24,17 @@ ion-content {
   --padding-start: 8px;
   --padding-top: 16px;
 }
+
+.position-absolute {
+  position: absolute;
+}
+
+.navbar-transparent {
+  .header-md:after {
+    display: none;
+  }
+
+  .mat-toolbar {
+    background: transparent;
+  }
+}

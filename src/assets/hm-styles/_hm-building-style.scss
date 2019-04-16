@@ -1,6 +1,10 @@
+/*
+ *  VARIABLES
+*/
 //color
 $color-red: #D70000;
 $color-blue: #019AE8;
+$color-grey: #E5E5E5;
 
 //font-size
 $font-size-12: 12px;
@@ -11,3 +15,9 @@ $font-size-16: 16px;
 $p-m-8: 8px;
 $p-m-16: 16px;
 
+/*
+ *  BUILDING CLASSES
+*/
+.bg-white {
+    background-color: white;
+}

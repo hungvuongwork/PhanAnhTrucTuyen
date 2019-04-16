@@ -24,7 +24,7 @@ const routes: Routes = [
       },
       {
         path: 'tin-tuc-detail',
-        loadChildren: './page-tin-tuc/tin-tuc-detail/tin-tuc-detail.module#TinTucDetailPageModule'
+        loadChildren: '../page-tin-tuc/tin-tuc-detail/tin-tuc-detail.module#TinTucDetailPageModule'
       },
     ]
   },
