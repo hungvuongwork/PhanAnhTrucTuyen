@@ -4,10 +4,13 @@
       <ion-title>Menu</ion-title>
     </ion-header>
 
-    <ion-content>
+    <ion-content no-padding>
       <ion-list>
         <ion-menu-toggle auto-hide="false" *ngFor="let link of menuLinks">
-          <ion-item [routerLink]="link.url" routerDirection="root" [class.active-item]="selectedPath === link.url">
+          <ion-item lines="none" [routerLink]="link.url" routerDirection="root"
+            [class.active-item]="selectedPath === link.url">
+            <ion-icon [name]="link.icon" slot="start"></ion-icon>
+            <!-- <mat-icon>{{link.icon}}</mat-icon> -->
             {{link.title}}
           </ion-item>
         </ion-menu-toggle>

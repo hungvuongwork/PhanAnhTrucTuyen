@@ -1,5 +1,5 @@
-<app-navbar [title]="' '" [isMenu]="false" class="navbar-transparent"></app-navbar>
-<ion-content class="position-absolute hm-tintucdetail" no-padding>
+<app-navbar [title]="' '" [isMenu]="false" class="navbar-transparent" [class.show-navbar-background]="showToolbar"></app-navbar>
+<ion-content fullscreen no-padding class="hm-tintucdetail" [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <div class="hm-tintuc-detail-imgtitle">
     <img src="http://www.hocmon.hochiminhcity.gov.vn/Hnh%20nh%20bn%20tin/2019-4/IMG_1389.jpg">
   </div>
@@ -58,9 +58,92 @@
   </div>
   <div class="mat-content hm-tintuc-relatenews">
     <h3 class="hm-tintuc-smalltitle"><b>Tin tức liên quan</b></h3>
-    <ion-list>
-      <ion-item>
-        dasdds
+    <ion-list no-padding>
+      <ion-item lines="none" no-padding>
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col no-padding>
+              <p class="hm-tintuc-news-time">
+                <mat-icon>access_time</mat-icon>
+                <span>18/03/2019</span>
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col no-padding size="8" class="hm-tintuc-news-content">
+              <h3 class="hm-tintuc-news-title">
+                PHÒNG GIAO DỊCH NGÂN HÀNG CHÍNH SÁCH XÃ HỘI HUYỆN - Hội nghị Triển khai nhiệm vụ năm 2019
+              </h3>
+              <p class="hm-tintuc-news-subtitle">
+                Chiều 04/03, tại Hội trường UBND huyện, đồng chí Đỗ Thanh Hòa - Huyện ủy viên, Phó Chủ tịch...
+              </p>
+            </ion-col>
+            <ion-col no-padding size="4" class="">
+              <img src="http://www.hocmon.hochiminhcity.gov.vn/Hnh%20nh%20bn%20tin/2019-4/IMG_1389.jpg">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="hm-divider">
+              <mat-divider></mat-divider>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item lines="none" no-padding>
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col no-padding>
+              <p class="hm-tintuc-news-time">
+                <mat-icon>access_time</mat-icon>
+                <span>18/03/2019</span>
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col no-padding size="8" class="hm-tintuc-news-content">
+              <h3 class="hm-tintuc-news-title">
+                Khảo sát tiến độ thực hiện 3 dự án đầu tư công
+              </h3>
+              <p class="hm-tintuc-news-subtitle">
+                Sáng 19/3, đồng chí Triệu Đỗ Hồng Phước - Trưởng ban Kinh tế...
+              </p>
+            </ion-col>
+            <ion-col no-padding size="4" class="">
+              <img
+                src="http://www.hocmon.hochiminhcity.gov.vn/Hnh%20nh%20bn%20tin/2019-4/%C4%91.c%20Tri%E1%BB%87u%20%C4%90%E1%BB%97%20H%E1%BB%93ng%20Ph%C6%B0%E1%BB%9Bc%20ph%C3%A1t%20bi%E1%BB%83u.JPG">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="hm-divider">
+              <mat-divider></mat-divider>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item lines="none" no-padding>
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col no-padding>
+              <p class="hm-tintuc-news-time">
+                <mat-icon>access_time</mat-icon>
+                <span>18/03/2019</span>
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col no-padding size="8" class="hm-tintuc-news-content">
+              <h3 class="hm-tintuc-news-title">
+                UBND XÃ TÂN HIỆP - HTX SX TMDV RAU SẠCH NÊN ĂN
+              </h3>
+              <p class="hm-tintuc-news-subtitle">
+                Tối 12/01, tại địa chỉ 13/1, ấp Thới Tây 2, UBND xã phối hợp HTX Sản xuất TM-DV...
+              </p>
+            </ion-col>
+            <ion-col no-padding size="4" class="">
+              <img src="http://www.hocmon.hochiminhcity.gov.vn/Hnh%20nh%20bn%20tin/2019-1/rs.jpg">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-item>
     </ion-list>
   </div>

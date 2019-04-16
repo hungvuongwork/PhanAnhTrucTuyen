@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { MenuPage } from './menu.page';
 
+//Angular Material
+import { MatIconModule } from '@angular/material';
+
 const routes: Routes = [
   {
     path: 'menu',
@@ -39,7 +42,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatIconModule
   ],
   declarations: [MenuPage]
 })
