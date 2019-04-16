@@ -1,0 +1,26 @@
+//Variables
+@import "./hm-building-style";
+
+//Color
+.hm-red {
+  color: $color-red;
+}
+.hm-blue {
+  color: $color-blue;
+}
+
+//Stying
+.mat-content {
+  padding: $p-m-16 $p-m-8 $p-m-8 $p-m-8 !important;
+}
+
+.hm-divider {
+  padding: $p-m-16 0;
+}
+
+ion-content {
+  --padding-bottom: 8px;
+  --padding-end: 8px;
+  --padding-start: 8px;
+  --padding-top: 16px;
+}

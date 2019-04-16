@@ -1,0 +1,9 @@
+<ion-header>
+  <mat-toolbar class="mat-toolbar-shadow" color="primary">
+    <mat-toolbar-row>
+      <mat-icon expand="full" (click)="openMenu()" [hidden]="!isMenu">menu</mat-icon>
+      <mat-icon expand="full" (click)="goBack()" [hidden]="isMenu">arrow_back</mat-icon>
+      <span class="hm-navigation-title">{{title}}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</ion-header>

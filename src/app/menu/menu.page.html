@@ -1,0 +1,19 @@
+<ion-split-pane>
+  <ion-menu contentId="content">
+    <ion-header>
+      <ion-title>Menu</ion-title>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let link of menuLinks">
+          <ion-item [routerLink]="link.url" routerDirection="root" [class.active-item]="selectedPath === link.url">
+            {{link.title}}
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="content" main></ion-router-outlet>
+</ion-split-pane>
