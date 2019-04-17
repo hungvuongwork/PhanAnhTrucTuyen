@@ -14,7 +14,8 @@ import { NavbarModule } from '../navbar/navbar.module';
 import { TinTucModule } from '../page-tin-tuc/tin-tuc/tin-tuc.module';
 
 //My Components
-import { NopHoSoComponent } from '../page-nop-ho-so/nop-ho-so/nop-ho-so.component';
+import { NopHoSoUnregistryComponent } from '../page-nop-ho-so/nop-ho-so-unregistry/nop-ho-so-unregistry.component';
+import { NopHoSoRegistriedComponent } from '../page-nop-ho-so/nop-ho-so-registried/nop-ho-so-registried.component';
 import { NguoiDungComponent } from '../page-nguoi-dung/nguoi-dung/nguoi-dung.component';
 
 @NgModule({
@@ -36,6 +37,6 @@ import { NguoiDungComponent } from '../page-nguoi-dung/nguoi-dung/nguoi-dung.com
     MatButtonToggleModule,
   ],
 
-  declarations: [HomePage, NopHoSoComponent, NguoiDungComponent]
+  declarations: [HomePage, NopHoSoUnregistryComponent, NopHoSoRegistriedComponent, NguoiDungComponent]
 })
 export class HomePageModule { }
