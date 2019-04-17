@@ -1,3 +1,44 @@
+@import "../../assets/hm-styles/hm-building-style";
+
 .active-item {
-    border-left: 8px solid var(--ion-color-primary);
+  --background: rgba(1, 154, 232, 0.24);
+  color: $color-blue;
+  font-weight: bold;
+
+  ion-icon {
+    color: $color-blue;
+  }
+}
+
+.hm-menu-header {
+  &.header-md {
+    &:after {
+      bottom: -4px;
+    }
+  }
+}
+
+.hm-menu-header-content {
+  bottom: 0;
+  color: white;
+  padding: 0 $p-m-16;
+  position: absolute;
+
+  p {
+    margin-top: $p-m-8;
+  }
+}
+
+.hm-menu-avatar {
+  background: white;
+  border-radius: 32px;
+  height: 64px;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
+  width: 64px;
+
+  img {
+    @extend %position-middle;
+  }
 }
