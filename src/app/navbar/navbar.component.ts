@@ -10,7 +10,11 @@ export class NavbarComponent implements OnInit {
   @Input() title : string;
   @Input() isMenu : boolean = true;
 
+  
+
   constructor(private menuCtrl: MenuController, private navCtrl: NavController) { }
+
+
 
   openMenu() {
     this.menuCtrl.open();

@@ -1,5 +1,5 @@
-//Variables
 @import "./hm-building-style";
+@import '~@angular/material/theming';
 
 //Color
 .hm-red {
@@ -45,5 +45,11 @@ ion-content {
     .mat-toolbar {
       background: $color-blue;
     }
+  }
+}
+
+.mat-tabs-shadow {
+  .mat-tab-header {
+    @include mat-elevation(3);
   }
 }
