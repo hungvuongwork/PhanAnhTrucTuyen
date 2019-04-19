@@ -48,6 +48,14 @@ ion-content {
   }
 }
 
+.mat-toolbar-shadow {
+  @include mat-elevation(3);
+
+  &.isHideShadow {
+    box-shadow: none;
+  }
+}
+
 .mat-tabs-shadow {
   .mat-tab-header {
     @include mat-elevation(3);

@@ -9,7 +9,7 @@ import { MenuController, NavController } from '@ionic/angular';
 export class NavbarComponent implements OnInit {
   @Input() title : string;
   @Input() isMenu : boolean = true;
-
+  @Input() isHideShadow : boolean = false;
   
 
   constructor(private menuCtrl: MenuController, private navCtrl: NavController) { }
