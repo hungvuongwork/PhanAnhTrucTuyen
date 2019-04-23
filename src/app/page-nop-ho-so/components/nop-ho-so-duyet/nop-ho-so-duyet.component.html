@@ -1,0 +1,39 @@
+<div class="mat-content">
+  <mat-card *ngFor="let tin of danhSachHoSoDuyet" class="hm-nhs-d-list">
+    <mat-card-content>
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col no-padding>
+            <ion-text color="primary">
+              <h6 no-margin>{{tin.title}}</h6>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col no-padding size="4" class="ion-text-end">
+            <ion-text color="medium">
+              Ông/Bà:
+            </ion-text>
+          </ion-col>
+          <ion-col no-padding size="8" class="hm-nhs-d-content">
+            {{tin.sentUser}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col no-padding size="4" class="ion-text-end">
+            <ion-text color="medium">
+              Ngày gửi:
+            </ion-text>
+          </ion-col>
+          <ion-col no-padding size="8" class="hm-nhs-d-content">
+            {{tin.sentDate | date: "HH:mm - dd/MM/yyyy"}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </mat-card-content>
+    <mat-card-actions class="ion-text-end">
+      <ion-button no-margin fill="clear" color="dark" class="hm-nhs-d-button">không duyệt</ion-button>
+      <ion-button no-margin fill="clear" color="danger" class="hm-nhs-d-button">duyệt</ion-button>
+    </mat-card-actions>
+  </mat-card>
+</div>

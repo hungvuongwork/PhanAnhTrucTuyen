@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nop-ho-so-unregistry.component.html',
   styleUrls: ['./nop-ho-so-unregistry.component.scss'],
 })
+
 export class NopHoSoUnregistryComponent implements OnInit {
 
   constructor() { }

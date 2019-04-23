@@ -6,10 +6,6 @@
   vertical-align: middle;
 }
 
-%opacity-54 {
-  opacity: 0.54;
-}
-
 .hm-tintuc-title {
   margin-top: 0;
   margin-bottom: $p-m-8;
@@ -27,6 +23,7 @@
 .hm-tintuc-news-card {
   padding: 0 0 $p-m-8 0;
   margin-bottom: $p-m-16;
+  overflow: hidden;
 
   img {
     border-top-left-radius: inherit;
@@ -41,11 +38,11 @@
 
 .hm-tintuc-news-time {
   font-size: $font-size-12;
-  @extend %opacity-54;
+  color: $color-grey;
   margin-bottom: $p-m-8;
   margin-top: 0;
 
-  mat-icon {
+  ion-icon {
     @extend %verical-middle;
     font-size: 20px;
   }
@@ -65,7 +62,7 @@
 }
 
 .hm-tintuc-news-subtitle {
-  @extend %opacity-54;
+  color: $color-grey;
 	margin-bottom: 1px;
   margin-top: 4px;
   font-size: $font-size-14;
@@ -77,4 +74,12 @@
 
 .hm-tintuc-news-content {
   padding-right: $p-m-16;
+}
+
+.lastItem {
+  ion-grid {
+    ion-row:last-child {
+      display: none;
+    }
+  }
 }

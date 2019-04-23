@@ -7,15 +7,16 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 
 //Angular Material
-import { MatTabsModule, MatToolbarModule, MatIconModule, MatButtonToggleModule, MatCardModule, MatListModule, MatDividerModule, MatButtonModule } from '@angular/material';
+import { MatTabsModule, MatToolbarModule, MatIconModule, MatCardModule, MatListModule, MatDividerModule } from '@angular/material';
 
 //My Modules
 import { NavbarModule } from '../navbar/navbar.module';
 import { NopHoSoUnregistryModule } from '../page-nop-ho-so/components/nop-ho-so-unregistry/nop-ho-so-unregistry.module';
+import { NopHoSoRegistriedModule } from '../page-nop-ho-so/components/nop-ho-so-registried/nop-ho-so-registried.module';
+import { TruncateModule } from '../common/truncate/truncate.module';
 
 //My Components
 import { TinTucComponent } from '../page-tin-tuc/components/tin-tuc/tin-tuc.component';
-import { NopHoSoRegistriedComponent } from '../page-nop-ho-so/components/nop-ho-so-registried/nop-ho-so-registried.component';
 import { NguoiDungComponent } from '../page-nguoi-dung/nguoi-dung/nguoi-dung.component';
 
 @NgModule({
@@ -29,18 +30,23 @@ import { NguoiDungComponent } from '../page-nguoi-dung/nguoi-dung/nguoi-dung.com
         component: HomePage,
       }
     ]),
+    
     NavbarModule,
+    
+    //Angular Material 7
     MatTabsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonToggleModule,
     MatCardModule,
     MatListModule,
     MatDividerModule,
-    MatButtonModule,
-    NopHoSoUnregistryModule
+
+    //My Modules
+    NopHoSoUnregistryModule,
+    NopHoSoRegistriedModule,
+    TruncateModule
   ],
 
-  declarations: [HomePage, NopHoSoRegistriedComponent, NguoiDungComponent, TinTucComponent]
+  declarations: [HomePage, NguoiDungComponent, TinTucComponent]
 })
 export class HomePageModule { }

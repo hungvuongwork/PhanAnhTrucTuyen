@@ -61,3 +61,27 @@ ion-content {
     @include mat-elevation(3);
   }
 }
+
+.mat-footer-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.ion-page {
+  justify-content: start;
+}
+
+.mat-tab-header {
+  z-index: 2;
+}
+
+.mat-tabs-bottom-fixed {
+  .mat-tab-header {
+    @extend .mat-footer-fixed;
+  }
+
+  .mat-tab-body-wrapper {
+    padding-bottom: 48px;
+  }
+}

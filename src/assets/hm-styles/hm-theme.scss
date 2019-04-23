@@ -2,8 +2,8 @@
 
 @include mat-core();
 
-$hm-app-primary: mat-palette($mat-light-blue);
-$hm-app-accent: mat-palette($mat-light-blue);
+$hm-app-primary: mat-palette($mat-blue);
+$hm-app-accent: mat-palette($mat-blue);
 $hm-app-theme: mat-light-theme($hm-app-primary, $hm-app-accent);
 
 @include angular-material-theme($hm-app-theme);

@@ -7,3 +7,31 @@
 .hm-toolbar-footer-sizenormal {
     font-size: $font-size-14;
 }
+
+.hm-nhs-u-title {
+    text-align: center;
+}
+
+.hm-nhs-u-img {
+    display: block;
+    margin: 32px auto;
+    width: 60%;
+}
+
+.hm-nhs-u-bullets {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin: 0 auto;
+}
+
+.hm-nhs-u-description {
+    ion-row {
+        margin-bottom: 16px;
+    }
+}

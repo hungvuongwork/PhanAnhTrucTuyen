@@ -9,6 +9,6 @@ export class NopHoSoRegistriedComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

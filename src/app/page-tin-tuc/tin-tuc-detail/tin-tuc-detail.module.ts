@@ -11,7 +11,7 @@ import { TinTucDetailPage } from './tin-tuc-detail.page';
 import { NavbarModule } from '../../navbar/navbar.module';
 
 //Angular Material
-import { MatCardModule, MatIconModule, MatListModule, MatDividerModule } from '@angular/material';
+import { MatCardModule, MatListModule, MatDividerModule } from '@angular/material';
 
 const routes: Routes = [
   {
@@ -28,7 +28,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     NavbarModule,
     MatCardModule, 
-    MatIconModule, 
     MatListModule, 
     MatDividerModule,
   ],

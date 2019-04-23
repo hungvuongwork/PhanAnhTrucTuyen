@@ -1,0 +1,15 @@
+@import "../../../../assets/hm-styles/hm-building-style";
+
+.hm-nhs-ds-main {
+  margin-bottom: $p-m-16;
+}
+
+.hm-nhs-ds-name {
+  margin: 0 0 $p-m-8 0;
+}
+
+.hm-nhs-ds-list {
+  ion-item:last-child {
+    --inner-border-width: 0;
+  }
+}
