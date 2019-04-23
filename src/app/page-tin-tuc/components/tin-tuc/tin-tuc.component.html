@@ -1,0 +1,70 @@
+<div class="mat-content">
+  <div *ngFor="let tin of danhSachTinTuc">
+    <div *ngIf="tin.isHotNews === true">
+      <h4 class="mat-h4 hm-red hm-tintuc-title">
+        <mat-icon>fiber_new</mat-icon>
+        <span>TIN MỚI</span>
+      </h4>
+      <mat-card class="hm-tintuc-news-card" (click)="goToTinTucDetail()" *ngFor="let item of tin.danhSach">
+        <ion-img [src]="item.imageNews"></ion-img>
+        <mat-card-content>
+          <p class="hm-tintuc-news-time">
+            <ion-icon name="time"></ion-icon>
+            <span>{{item.publishDateNews | date: "dd/MM/yyyy"}}</span>
+          </p>
+
+          <h3 class="mat-h3 hm-tintuc-news-title">{{item.titleNews}}</h3>
+
+          <p class="hm-tintuc-news-subtitle">
+            {{item.subtitleNews | truncate:60}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div *ngIf="tin.isHotNews === false">
+      <h4 class="mat-h4 hm-blue hm-tintuc-title" (click)="goToTinTucCategory()">
+        <span>{{tin.name}}</span>
+      </h4>
+
+      <mat-card class="hm-tintuc-news-card">
+        <mat-card-content class="hm-tintuc-news-cardcontent">
+          <ion-list no-padding>
+            <ion-item lines="none" no-padding *ngFor="let item of tin.danhSach; let last = last;"
+              [ngClass]="{ lastItem : last }" (click)="goToTinTucDetail()">
+              <ion-grid no-padding>
+                <ion-row>
+                  <ion-col no-padding>
+                    <p class="hm-tintuc-news-time">
+                      <ion-icon name="time"></ion-icon>
+                      <span>{{item.publishDateNews | date: "dd/MM/yyyy"}}</span>
+                    </p>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col no-padding size="8" class="hm-tintuc-news-content">
+                    <h3 class="hm-tintuc-news-title">
+                      {{item.titleNews}}
+                    </h3>
+                    <p class="hm-tintuc-news-subtitle">
+                      {{item.subtitleNews | truncate:68}}
+                    </p>
+                  </ion-col>
+                  <ion-col no-padding size="4" class="">
+                    <ion-img [src]="item.imageNews">
+                    </ion-img>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col class="hm-divider">
+                    <mat-divider></mat-divider>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-item>
+          </ion-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NopHoSoComponent } from './nop-ho-so.component';
+import { NopHoSoDuyetComponent } from './nop-ho-so-duyet.component';
 
-describe('NopHoSoComponent', () => {
-  let component: NopHoSoComponent;
-  let fixture: ComponentFixture<NopHoSoComponent>;
+describe('NopHoSoDuyetComponent', () => {
+  let component: NopHoSoDuyetComponent;
+  let fixture: ComponentFixture<NopHoSoDuyetComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NopHoSoComponent ],
+      declarations: [ NopHoSoDuyetComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NopHoSoComponent);
+    fixture = TestBed.createComponent(NopHoSoDuyetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,14 @@
+<div class="mat-content">
+  <div *ngFor="let item of danhSachHoSo" class="hm-nhs-ds-main">
+    <h6 class="hm-nhs-ds-name">{{item.name}}</h6>
+    <ion-list no-padding class="hm-nhs-ds-list">
+      <ion-item *ngFor="let list of item.danhSach">
+        <ion-icon name="list-box" slot="start" [color]="'primary'"></ion-icon>
+        <ion-label text-wrap>
+          {{list.title}}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <mat-divider></mat-divider>
+  </div>
+</div>

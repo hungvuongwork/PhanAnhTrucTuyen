@@ -1,5 +1,5 @@
-//Variables
 @import "./hm-building-style";
+@import '~@angular/material/theming';
 
 //Color
 .hm-red {
@@ -45,5 +45,43 @@ ion-content {
     .mat-toolbar {
       background: $color-blue;
     }
+  }
+}
+
+.mat-toolbar-shadow {
+  @include mat-elevation(3);
+
+  &.isHideShadow {
+    box-shadow: none;
+  }
+}
+
+.mat-tabs-shadow {
+  .mat-tab-header {
+    @include mat-elevation(3);
+  }
+}
+
+.mat-footer-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.ion-page {
+  justify-content: start;
+}
+
+.mat-tab-header {
+  z-index: 2;
+}
+
+.mat-tabs-bottom-fixed {
+  .mat-tab-header {
+    @extend .mat-footer-fixed;
+  }
+
+  .mat-tab-body-wrapper {
+    padding-bottom: 48px;
   }
 }

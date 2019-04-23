@@ -2,9 +2,9 @@
  *  VARIABLES
 */
 //color
-$color-red: #D70000;
-$color-blue: #019AE8;
-$color-grey: #E5E5E5;
+$color-red: var(--ion-color-danger);
+$color-blue: var(--ion-color-primary);
+$color-grey: var(--ion-color-medium);
 
 //font-size
 $font-size-12: 12px;

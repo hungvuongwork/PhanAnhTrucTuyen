@@ -1,0 +1,40 @@
+<div class="mat-content">
+  <mat-card *ngFor="let tin of danhSachHoSoDaNop" class="hm-nhs-d-list">
+    <mat-card-content>
+      <ion-grid no-padding>
+        <ion-row>
+          <ion-col no-padding>
+            <ion-text color="primary">
+              <h6 no-margin>{{tin.title}}</h6>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col no-padding>
+            <ion-badge [color]="tin.statusId == 0 ? 'danger' : 'success'">{{tin.statusText}}</ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col no-padding size="4" class="ion-text-end">
+            <ion-text color="medium">
+              Ông/Bà:
+            </ion-text>
+          </ion-col>
+          <ion-col no-padding size="8" class="hm-nhs-d-content">
+            {{tin.sentUser}}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col no-padding size="4" class="ion-text-end">
+            <ion-text color="medium">
+              Ngày gửi:
+            </ion-text>
+          </ion-col>
+          <ion-col no-padding size="8" class="hm-nhs-d-content">
+            {{tin.sentDate | date: "HH:mm - dd/MM/yyyy"}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </mat-card-content>
+  </mat-card>
+</div>

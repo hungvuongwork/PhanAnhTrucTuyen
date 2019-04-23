@@ -43,7 +43,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    MatIconModule
+    MatIconModule,
   ],
   declarations: [MenuPage]
 })
