@@ -22,7 +22,7 @@ ionic cordova prepare
 ## Project Status
 Still developing...
 
-##Noted
+## Noted
 - Tich hop Angular Material vao Ionic Framework
 https://www.freakyjolly.com/use-angular-material-in-ionic-3/
 
@@ -35,11 +35,11 @@ https://www.youtube.com/watch?v=I82_roQSgco
 - Passing Data Angular > 2.x
 https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
 
-##Fix bug
+## Fix bug
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
 
-##Tips
+## Tips
 - When create new Ionic Project, please press command "ionic cordova prepare" to use command "ionic serve --devapp"
 
 - Designed: Bottom mat-tabs Angular Material in Ionic 4
