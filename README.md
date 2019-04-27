@@ -23,10 +23,10 @@ ionic cordova prepare
 Still developing...
 
 ## Noted
-- Tich hop Angular Material vao Ionic Framework
+- Integrate Angular Material into Ionic Framework
 https://www.freakyjolly.com/use-angular-material-in-ionic-3/
 
-- Tich hop Ionic Tabs Page -- Not Recommend
+- Integrate Ionic Tabs Page -- Not Recommend
 https://alligator.io/ionic/ionic-4-tabs/
 
 - Custom Side Menu 
