@@ -35,6 +35,9 @@ https://www.youtube.com/watch?v=I82_roQSgco
 - Passing Data Angular > 2.x
 https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
 
+- Using Modal Ionic 4
+https://www.freakyjolly.com/ionic-4-how-to-use-ionic-modal-popovers-and-pass-data-and-receive-response/#more-1885
+
 ## Fix bug
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
