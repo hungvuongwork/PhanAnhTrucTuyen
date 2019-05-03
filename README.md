@@ -50,3 +50,6 @@ https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-t
 
 - Data Types SQL and C# Mapping
 https://stackoverflow.com/questions/425389/c-sharp-equivalent-of-sql-server-datatypes
+
+## Bugs
+- Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
