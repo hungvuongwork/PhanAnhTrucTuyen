@@ -34,6 +34,7 @@ https://www.youtube.com/watch?v=I82_roQSgco
 
 - Passing Data Angular > 2.x
 https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
+https://ionicacademy.com/pass-data-angular-router-ionic-4/
 
 - Using Modal Ionic 4
 https://www.freakyjolly.com/ionic-4-how-to-use-ionic-modal-popovers-and-pass-data-and-receive-response/#more-1885
