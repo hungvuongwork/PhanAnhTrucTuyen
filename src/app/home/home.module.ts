@@ -7,10 +7,9 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 
 //Angular Material
-import { MatTabsModule, MatToolbarModule, MatIconModule, MatCardModule, MatListModule, MatDividerModule } from '@angular/material';
+import { MatTabsModule, MatToolbarModule, MatIconModule, MatCardModule, MatListModule, MatDividerModule, MatMenuModule } from '@angular/material';
 
 //My Modules
-import { NavbarModule } from '../navbar/navbar.module';
 import { NopHoSoUnregistryModule } from '../page-nop-ho-so/components/nop-ho-so-unregistry/nop-ho-so-unregistry.module';
 import { NopHoSoRegistriedModule } from '../page-nop-ho-so/components/nop-ho-so-registried/nop-ho-so-registried.module';
 import { TruncateModule } from '../common/truncate/truncate.module';
@@ -31,8 +30,6 @@ import { NguoiDungComponent } from '../page-nguoi-dung/nguoi-dung/nguoi-dung.com
       }
     ]),
     
-    NavbarModule,
-    
     //Angular Material 7
     MatTabsModule,
     MatToolbarModule,
@@ -40,6 +37,7 @@ import { NguoiDungComponent } from '../page-nguoi-dung/nguoi-dung/nguoi-dung.com
     MatCardModule,
     MatListModule,
     MatDividerModule,
+    MatMenuModule,
 
     //My Modules
     NopHoSoUnregistryModule,

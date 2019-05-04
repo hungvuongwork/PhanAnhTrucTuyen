@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Nộp Hồ Sơ Qua Mạng</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <form #nopHoSoQuaMang="ngForm" (ngSubmit)="nopHoSoQuaMang.value">
+    <mat-vertical-stepper>
+      <mat-step label="Thông tin hồ sơ">
+        <p>
+          <ion-text color="primary"><b>Đăng ký thành lập hộ kinh doanh</b></ion-text>
+        </p>
+
+        <p class="mat-subheading-1">
+          <b>Các bước thực hiện:</b>
+          <br>
+          1. Chuẩn bị đầy đủ các thành phần hồ sơ theo quy định (tham khảo thành phần hồ sơ bên dưới):
+          <ion-button color="success" expand="block" (click)="openThanhPhanHS()">XEM THÀNH PHẦN HỒ SƠ</ion-button>
+          2. Khai báo thông tin người nộp.
+          <br>
+          3. Khai báo thông tin hồ sơ.
+          <br>
+          4. Chụp hình và đính kèm đầy đủ thành phần hồ sơ.
+        </p>
+
+        <p class="mat-small">
+          <i>Lưu ý: Sau khi thực hiện đầy đủ các bước nêu trên, hồ sơ sẽ được tự động chuyển đến Bộ phận
+            Tiếp nhận và Trả kết quả của UBND huyện Hóc Môn. Kết quả xử lý sẽ được phản hồi qua tin nhắn theo số điện
+            thoại đã cung cấp.
+          </i>
+        </p>
+
+        <div>
+          <button mat-raised-button color="primary" matStepperNext type="button">TIẾP TỤC</button>
+        </div>
+      </mat-step>
+
+      <mat-step label="Thông tin người nộp">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Họ tên người nộp" type="text" name="hoTenNguoiNop">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Số chứng minh nhân dân" type="text" name="soCMND">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Số điện thoại" type="phone" name="soDienThoai">
+        </mat-form-field>
+
+        <div>
+          <button mat-button matStepperPrevious type="button">Quay lại</button>
+          <button mat-raised-button color="primary" matStepperNext type="button">TIẾP TỤC</button>
+        </div>
+      </mat-step>
+
+      <mat-step label="Nội dung hồ sơ">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Tên hộ gia đình" type="text" name="tenHoGiaDinh">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Địa điểm kinh doanh" type="text" name="diaDiemKinhDoanh">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Ngành nghề kinh doanh" type="text" name="nganhNgheKinhDoanh">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Ngày bắt đầu hoạt động" type="date" name="ngayBatDauHoatDong">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Vốn kinh doanh" type="number" name="vonKinhDoanh">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Tổng số lao động/người" type="number" name="tongSoLaoDong">
+        </mat-form-field>
+
+        <div>
+          <button mat-button matStepperPrevious type="button">Quay lại</button>
+          <button mat-raised-button color="primary" matStepperNext type="button">TIẾP TỤC</button>
+        </div>
+      </mat-step>
+
+      <mat-step label="Hồ sơ đính kèm">
+        <ion-list>
+          <ion-item>
+            <ion-button color="tertiary" class="btnTepDinhKem">Tệp</ion-button>
+            <ion-label text-wrap>Giấy đề nghị đăng ký kinh doanh hộ kinh doanh</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-button color="tertiary" class="btnTepDinhKem">Tệp</ion-button>
+            <ion-label text-wrap>Bản photo Giấy chưng minh nhân dân</ion-label>
+          </ion-item>
+          <ion-item>
+            <p>
+              <i class="mat-small">Lưu ý: Ông/Bà cần chuẩn bị đầy đủ bộ hồ sơ (Bản chính) để nộp cho cơ quan chức năng
+                khi kiểm tra thực địa.</i>
+            </p>
+          </ion-item>
+        </ion-list>
+
+        <div>
+          <button mat-button matStepperPrevious type="button">Quay lại</button>
+          <button mat-raised-button type="submit" class="mat-button-success">HOÀN TẤT HỒ SƠ</button>
+        </div>
+      </mat-step>
+    </mat-vertical-stepper>
+  </form>
+</ion-content>

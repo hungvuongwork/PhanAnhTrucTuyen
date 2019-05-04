@@ -1,0 +1,15 @@
+@import "../../../assets//hm-styles/hm-building-style";
+
+.example-full-width {
+  width: 100%;
+}
+
+.btnTepDinhKem {
+  height: 40px;
+  margin-right: $p-m-8;
+}
+
+.mat-button-success {
+  background-color: var(--ion-color-success);
+  color: white;
+}

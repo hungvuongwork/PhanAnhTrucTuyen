@@ -2,7 +2,7 @@
   <div *ngFor="let item of danhSachHoSo" class="hm-nhs-ds-main">
     <h6 class="hm-nhs-ds-name">{{item.name}}</h6>
     <ion-list no-padding class="hm-nhs-ds-list">
-      <ion-item *ngFor="let list of item.danhSach">
+      <ion-item *ngFor="let list of item.danhSach" (click)="goToNopHoSoSubmitDoc()">
         <ion-icon name="list-box" slot="start" [color]="'primary'"></ion-icon>
         <ion-label text-wrap>
           {{list.title}}

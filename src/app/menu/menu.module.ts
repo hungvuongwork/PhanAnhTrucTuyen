@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,16 +10,21 @@ import { MenuPage } from './menu.page';
 //Angular Material
 import { MatIconModule } from '@angular/material';
 
+//My Modals
+//import { ThanhPhanHoSoPageModule } from '../page-nop-ho-so/modals/thanh-phan-ho-so/thanh-phan-ho-so.module';
+
 const routes: Routes = [
   {
     path: 'menu',
     component: MenuPage,
     children: [
       {
-        path: 'home', loadChildren: '../home/home.module#HomePageModule'
+        path: 'home',
+        loadChildren: '../home/home.module#HomePageModule'
       },
       {
-        path: 'login', loadChildren: '../login/login.module#LoginPageModule'
+        path: 'login',
+        loadChildren: '../login/login.module#LoginPageModule'
       },
       {
         path: 'tin-tuc-category',
@@ -28,6 +33,10 @@ const routes: Routes = [
       {
         path: 'tin-tuc-detail',
         loadChildren: '../page-tin-tuc/tin-tuc-detail/tin-tuc-detail.module#TinTucDetailPageModule'
+      },
+      {
+        path: 'nop-ho-so-submitdoc',
+        loadChildren: '../page-nop-ho-so/nop-ho-so-submitdoc/nop-ho-so-submitdoc.module#NopHoSoSubmitdocPageModule',
       },
     ]
   },
@@ -44,6 +53,10 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes),
     MatIconModule,
+
+    //My Modals
+    //ThanhPhanHoSoPageModule
+
   ],
   declarations: [MenuPage]
 })

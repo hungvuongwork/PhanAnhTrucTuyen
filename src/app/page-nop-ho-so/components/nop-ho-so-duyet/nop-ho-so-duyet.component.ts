@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './nop-ho-so-duyet.component.html',
   styleUrls: ['./nop-ho-so-duyet.component.scss'],
 })
+
 export class NopHoSoDuyetComponent implements OnInit {
 
   danhSachHoSoDuyet: Object[] = [
@@ -28,5 +29,4 @@ export class NopHoSoDuyetComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
-
 }

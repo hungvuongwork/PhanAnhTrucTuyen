@@ -1,7 +1,7 @@
-@import '../components/tin-tuc/tin-tuc.component.scss';
+@import "../components/tin-tuc/tin-tuc.component.scss";
 
 .hm-tintucdetail {
-  --background: #E5E5E5;
+  --background: #e5e5e5;
 }
 
 .hm-tintucdetail-content {
@@ -22,4 +22,10 @@
 
 .hm-tintuc-relatenews {
   @extend .bg-white;
+}
+
+.ion-color-translucent {
+  ion-icon, ion-title {
+    --color: white;
+  }
 }

@@ -16,6 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //My Components
 
+//My Services
+
+//My Modals
+import { ThanhPhanHoSoPageModule } from './page-nop-ho-so/modals/thanh-phan-ho-so/thanh-phan-ho-so.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -25,11 +30,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     //Angular Material Component
     BrowserAnimationsModule,
+    //My Modals
+    ThanhPhanHoSoPageModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent]
 })

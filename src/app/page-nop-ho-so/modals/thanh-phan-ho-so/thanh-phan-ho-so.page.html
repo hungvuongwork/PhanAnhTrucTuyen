@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Thành Phần Hồ Sơ</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeThanhPhanHS()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-padding class="hm-nhs-ds-list">
+    <ion-item *ngFor="let item of dsThanhPhanHS">
+      <ion-icon name="list-box" slot="start" [color]="'primary'"></ion-icon>
+      <ion-label text-wrap>
+        {{item.title}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

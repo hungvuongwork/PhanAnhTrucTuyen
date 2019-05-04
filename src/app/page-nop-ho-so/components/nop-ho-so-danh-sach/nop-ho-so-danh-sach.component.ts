@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nop-ho-so-danh-sach',
@@ -25,7 +26,11 @@ export class NopHoSoDanhSachComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  goToNopHoSoSubmitDoc(): void {
+    this.router.navigateByUrl('/menu/nop-ho-so-submitdoc');
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit() { }
 

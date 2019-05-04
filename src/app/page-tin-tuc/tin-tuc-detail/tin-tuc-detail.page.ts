@@ -8,7 +8,8 @@ import { ScrollDetail } from '@ionic/core';
 })
 export class TinTucDetailPage implements OnInit {
 
-  showToolbar = false;
+  //showToolbar = false;
+  showToolbar: Boolean;
 
   onScroll($event: CustomEvent<ScrollDetail>) {
     if ($event && $event.detail && $event.detail.scrollTop) {
