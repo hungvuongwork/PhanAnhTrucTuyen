@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row no-padding>
+      <ion-col class="ion-text-center">
+        <ion-button color="primary" routerLink="/menu/home">QUAY LẠI</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col size="6" push="3">
+        <ion-img src="../../assets/NopHoSoThanhCong.svg"></ion-img>
+      </ion-col>
+    </ion-row>
+    <app-nop-ho-so-submitsuccess *ngIf="showSuccess == 1"></app-nop-ho-so-submitsuccess>
+    <app-registry-success *ngIf="showSuccess == 2"></app-registry-success>
+  </ion-grid>
+</ion-content>

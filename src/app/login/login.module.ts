@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 //Angular Material Component
-import { MatToolbarModule, MatIconModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
 
 //My Modules
 import { LoginPage } from './login.page';
@@ -24,8 +24,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    MatToolbarModule,
-    MatIconModule,
+    MatInputModule
   ],
   declarations: [LoginPage]
 })

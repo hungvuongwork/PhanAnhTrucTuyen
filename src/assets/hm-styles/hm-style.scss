@@ -9,6 +9,51 @@
   color: $color-blue;
 }
 
+//Override Ionic Styling
+.ion-no-padding-top {
+  --padding-top: 0;
+  padding-top: 0;
+}
+
+.ion-no-padding-bottom {
+  --padding-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ion-no-padding-left {
+  --padding-left: 0;
+  padding-left: 0;
+}
+
+.ion-no-padding-right {
+  --padding-right: 0;
+  padding-right: 0;
+}
+
+.ion-no-margin-top {
+  --margin-top: 0;
+  margin-top: 0;
+}
+
+.ion-no-margin-bottom {
+  --margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.ion-no-margin-left {
+  --margin-left: 0;
+  margin-left: 0;
+}
+
+.ion-no-margin-right {
+  --margin-right: 0;
+  margin-right: 0;
+}
+
+ion-toolbar {
+  --background: var(--ion-color-primary);
+}
+
 //Stying
 .mat-content {
   padding: $p-m-16 $p-m-8 $p-m-8 $p-m-8 !important;
@@ -113,4 +158,8 @@ ion-content {
 
 .alertDanger {
   color: $color-red !important;
+}
+
+.input-full-width {
+  width: 100%;
 }

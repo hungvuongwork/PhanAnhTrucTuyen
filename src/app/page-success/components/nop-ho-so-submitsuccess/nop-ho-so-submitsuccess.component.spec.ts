@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NopHoSoSubmitsuccessPage } from './nop-ho-so-submitsuccess.page';
+import { NopHoSoSubmitsuccessComponent } from './nop-ho-so-submitsuccess.component';
 
-describe('NopHoSoSubmitsuccessPage', () => {
-  let component: NopHoSoSubmitsuccessPage;
-  let fixture: ComponentFixture<NopHoSoSubmitsuccessPage>;
+describe('NopHoSoSubmitsuccessComponent', () => {
+  let component: NopHoSoSubmitsuccessComponent;
+  let fixture: ComponentFixture<NopHoSoSubmitsuccessComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NopHoSoSubmitsuccessPage ],
+      declarations: [ NopHoSoSubmitsuccessComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NopHoSoSubmitsuccessPage);
+    fixture = TestBed.createComponent(NopHoSoSubmitsuccessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

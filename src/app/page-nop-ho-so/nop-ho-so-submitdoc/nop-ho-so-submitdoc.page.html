@@ -41,15 +41,15 @@
       </mat-step>
 
       <mat-step label="Thông tin người nộp">
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Họ tên người nộp" type="text" name="hoTenNguoiNop">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Số chứng minh nhân dân" type="text" name="soCMND">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Số điện thoại" type="phone" name="soDienThoai">
         </mat-form-field>
 
@@ -60,27 +60,27 @@
       </mat-step>
 
       <mat-step label="Nội dung hồ sơ">
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Tên hộ gia đình" type="text" name="tenHoGiaDinh">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Địa điểm kinh doanh" type="text" name="diaDiemKinhDoanh">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Ngành nghề kinh doanh" type="text" name="nganhNgheKinhDoanh">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Ngày bắt đầu hoạt động" type="date" name="ngayBatDauHoatDong">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Vốn kinh doanh" type="number" name="vonKinhDoanh">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="input-full-width">
           <input matInput placeholder="Tổng số lao động/người" type="number" name="tongSoLaoDong">
         </mat-form-field>
 
@@ -110,7 +110,7 @@
 
         <div>
           <button mat-button matStepperPrevious type="button">Quay lại</button>
-          <button mat-raised-button type="submit" class="mat-button-success">HOÀN TẤT HỒ SƠ</button>
+          <button mat-raised-button type="submit" class="mat-button-success" (click)="goToPageSuccess()">HOÀN TẤT HỒ SƠ</button>
         </div>
       </mat-step>
     </mat-vertical-stepper>
