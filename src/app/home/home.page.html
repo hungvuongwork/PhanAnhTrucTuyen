@@ -1,14 +1,46 @@
-<app-navbar [title]="'Hóc Môn Trực Tuyến'" [isHideShadow]="true"></app-navbar>
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <!-- <app-navbar [title]="'Hóc Môn Trực Tuyến'" [isHideShadow]="true" [isSearchBar]="isSearchBar" 
+      [isMoreMenu]="isMoreMenu"></app-navbar>-->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
 
-<mat-tab-group mat-stretch-tabs [backgroundColor]="'primary'" class="mat-tabs-shadow">
-  <mat-tab label="TIN TỨC">
-    <app-tin-tuc></app-tin-tuc>
-  </mat-tab>
-  <mat-tab label="NỘP HỒ SƠ">
-    <app-nop-ho-so-unregistry [hidden]="true"></app-nop-ho-so-unregistry>
-    <app-nop-ho-so-registried [hidden]="false"></app-nop-ho-so-registried>
-  </mat-tab>
-  <mat-tab label="NGƯỜI DÙNG">
-    <app-nguoi-dung></app-nguoi-dung>
-  </mat-tab>
-</mat-tab-group>
+    <ion-title>Hóc Môn Trực Tuyến</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button [hidden]="!isMoreMenu" [matMenuTriggerFor]="menu">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+      <ion-button [hidden]="!isSearchBar">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Menu duyet & khong duyet -->
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="duyetTatCa()">
+      <span>Duyệt tất cả</span>
+    </button>
+    <button mat-menu-item (click)="khongDuyetTatCa()">
+      <span>Không duyệt tất cả</span>
+    </button>
+  </mat-menu>
+</ion-header>
+
+<ion-content no-padding>
+  <mat-tab-group mat-stretch-tabs [backgroundColor]="'primary'"
+    class="mat-tabs-shadow mat-tabs-top-fixed mat-tabs-in-tabs" (selectedTabChange)="loadList($event)">
+    <mat-tab label="TIN TỨC">
+      <app-tin-tuc></app-tin-tuc>
+    </mat-tab>
+    <mat-tab label="NỘP HỒ SƠ">
+      <app-nop-ho-so-unregistry [hidden]="true"></app-nop-ho-so-unregistry>
+      <app-nop-ho-so-registried [hidden]="false"></app-nop-ho-so-registried>
+    </mat-tab>
+    <mat-tab label="NGƯỜI DÙNG">
+      <app-nguoi-dung></app-nguoi-dung>
+    </mat-tab>
+  </mat-tab-group>
+</ion-content>

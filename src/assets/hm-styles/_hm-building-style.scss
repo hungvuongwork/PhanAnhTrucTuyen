@@ -14,6 +14,8 @@ $font-size-16: 16px;
 //padding & margin
 $p-m-8: 8px;
 $p-m-16: 16px;
+$p-m-toolbars: 56px;
+$p-m-tabs: 48px;
 
 /*
  *  BUILDING CLASSES
@@ -29,4 +31,13 @@ $p-m-16: 16px;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
+}
+
+%position-fixed {
+    position: fixed;
+    width: 100%;
+}
+
+%position-rm-top {
+    top: initial !important;
 }

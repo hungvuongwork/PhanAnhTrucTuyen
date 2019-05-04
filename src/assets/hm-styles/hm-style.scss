@@ -1,5 +1,5 @@
 @import "./hm-building-style";
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 
 //Color
 .hm-red {
@@ -63,9 +63,8 @@ ion-content {
 }
 
 .mat-footer-fixed {
-  position: fixed;
+  @extend %position-fixed;
   bottom: 0;
-  width: 100%;
 }
 
 .ion-page {
@@ -76,12 +75,42 @@ ion-content {
   z-index: 2;
 }
 
+.mat-tabs-top-fixed {
+  .mat-tab-header {
+    @extend %position-fixed;
+    top: $p-m-toolbars;
+  }
+
+  .mat-tab-body-wrapper {
+    padding-top: $p-m-tabs;
+  }
+
+  &.mat-tabs-in-tabs {
+    .mat-tabs-bottom-fixed {
+      .mat-tab-header {
+        @extend %position-rm-top;
+      }
+      .mat-tab-body-wrapper {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
 .mat-tabs-bottom-fixed {
   .mat-tab-header {
     @extend .mat-footer-fixed;
   }
 
   .mat-tab-body-wrapper {
-    padding-bottom: 48px;
+    padding-bottom: $p-m-tabs;
   }
+}
+
+.alertMedium {
+  color: $color-grey !important;
+}
+
+.alertDanger {
+  color: $color-red !important;
 }

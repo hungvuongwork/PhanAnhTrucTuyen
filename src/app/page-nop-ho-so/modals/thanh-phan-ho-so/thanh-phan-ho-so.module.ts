@@ -5,16 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-//Angular Material Component
-import { MatToolbarModule, MatIconModule } from '@angular/material';
-
-//My Modules
-import { LoginPage } from './login.page';
+import { ThanhPhanHoSoPage } from './thanh-phan-ho-so.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: ThanhPhanHoSoPage
   }
 ];
 
@@ -23,10 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    MatToolbarModule,
-    MatIconModule,
+    RouterModule.forChild(routes)
   ],
-  declarations: [LoginPage]
+  declarations: [ThanhPhanHoSoPage]
 })
-export class LoginPageModule { }
+export class ThanhPhanHoSoPageModule {}

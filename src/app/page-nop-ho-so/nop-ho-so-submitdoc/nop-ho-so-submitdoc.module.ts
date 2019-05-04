@@ -5,16 +5,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-//Angular Material Component
-import { MatToolbarModule, MatIconModule } from '@angular/material';
+import { NopHoSoSubmitdocPage } from './nop-ho-so-submitdoc.page';
 
-//My Modules
-import { LoginPage } from './login.page';
+//Angular Material
+import { MatStepperModule, MatButtonModule, MatInputModule } from '@angular/material';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: NopHoSoSubmitdocPage
   }
 ];
 
@@ -24,9 +23,12 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    MatToolbarModule,
-    MatIconModule,
+    
+    //Angular Material
+    MatStepperModule,
+    MatButtonModule,
+    MatInputModule
   ],
-  declarations: [LoginPage]
+  declarations: [NopHoSoSubmitdocPage]
 })
-export class LoginPageModule { }
+export class NopHoSoSubmitdocPageModule {}

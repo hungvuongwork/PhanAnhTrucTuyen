@@ -8,7 +8,6 @@ import { IonicModule } from '@ionic/angular';
 import { TinTucDetailPage } from './tin-tuc-detail.page';
 
 //My modules
-import { NavbarModule } from '../../navbar/navbar.module';
 
 //Angular Material
 import { MatCardModule, MatListModule, MatDividerModule } from '@angular/material';
@@ -26,7 +25,6 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    NavbarModule,
     MatCardModule, 
     MatListModule, 
     MatDividerModule,

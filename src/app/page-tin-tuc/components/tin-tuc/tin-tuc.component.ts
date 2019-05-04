@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
+import { HomePage } from '../../../home/home.page';
+
+
 @Component({
   selector: 'app-tin-tuc',
   templateUrl: './tin-tuc.component.html',
@@ -47,7 +50,10 @@ export class TinTucComponent implements OnInit {
     }
   ]
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, public homeCtrl: HomePage) {
+    this.homeCtrl.isMoreMenu = false;
+    this.homeCtrl.isSearchBar = false;
+  }
 
   goToTinTucCategory() {
     this.navCtrl.navigateForward('/menu/tin-tuc-category');
