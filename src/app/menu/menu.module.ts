@@ -27,6 +27,10 @@ const routes: Routes = [
         loadChildren: '../login/login.module#LoginPageModule'
       },
       {
+        path: 'registry',
+        loadChildren: '../registry/registry.module#RegistryPageModule'
+      },
+      {
         path: 'tin-tuc-category',
         loadChildren: '../page-tin-tuc/tin-tuc-category/tin-tuc-category.module#TinTucCategoryPageModule'
       },
@@ -37,6 +41,10 @@ const routes: Routes = [
       {
         path: 'nop-ho-so-submitdoc',
         loadChildren: '../page-nop-ho-so/nop-ho-so-submitdoc/nop-ho-so-submitdoc.module#NopHoSoSubmitdocPageModule',
+      },
+      {
+        path: 'page-success',
+        loadChildren: '../page-success/page-success.module#PageSuccessPageModule'
       },
     ]
   },

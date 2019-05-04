@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomePage } from '../../../home/home.page';
+//import { HomePage } from '../../../home/home.page';
 
 @Component({
   selector: 'app-nop-ho-so-registried',
@@ -8,22 +8,22 @@ import { HomePage } from '../../../home/home.page';
 })
 export class NopHoSoRegistriedComponent implements OnInit {
 
-  loadList(e) {
-    if (e.index == 1) {
-      this.homeCtrl.isMoreMenu = true;
-      this.homeCtrl.isSearchBar = false;
-    }
-    else if (e.index == 2) {
-      this.homeCtrl.isMoreMenu = false;
-      this.homeCtrl.isSearchBar = true;
-    }
-    else {
-      this.homeCtrl.isMoreMenu = false;
-      this.homeCtrl.isSearchBar = false;
-    }
-  }
+  // loadList(e) {
+  //   if (e.index == 1) {
+  //     this.homeCtrl.isMoreMenu = true;
+  //     this.homeCtrl.isSearchBar = false;
+  //   }
+  //   else if (e.index == 2) {
+  //     this.homeCtrl.isMoreMenu = false;
+  //     this.homeCtrl.isSearchBar = true;
+  //   }
+  //   else {
+  //     this.homeCtrl.isMoreMenu = false;
+  //     this.homeCtrl.isSearchBar = false;
+  //   }
+  // }
 
-  constructor(private homeCtrl: HomePage) { }
+  constructor() { }
 
   ngOnInit() { }
 }

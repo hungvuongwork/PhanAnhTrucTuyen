@@ -6,7 +6,6 @@ const routes: Routes = [
     path: '',
     loadChildren: './menu/menu.module#MenuPageModule'
   },
-  { path: 'nop-ho-so-submitsuccess', loadChildren: './page-nop-ho-so/nop-ho-so-submitsuccess/nop-ho-so-submitsuccess.module#NopHoSoSubmitsuccessPageModule' },
 ];
 
 @NgModule({

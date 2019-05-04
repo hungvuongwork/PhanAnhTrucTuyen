@@ -1,12 +1,10 @@
-<!-- <app-navbar [title]="'Đăng ký / Đăng nhập'"></app-navbar> -->
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-button routerLink="/menu/home" fill="clear">
-        <ion-icon slot="icon-only" name="close"></ion-icon>
-      </ion-button>
+      <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Đăng ký / Đăng nhập</ion-title>
+
+    <ion-title>Đăng ký</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,6 +14,13 @@
       <ion-row>
         <ion-col class="ion-text-center">
           <h1><b>HÓC MÔN TRỰC TUYẾN</b></h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Họ và tên" type="text">
+          </mat-form-field>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -34,17 +39,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button color="primary" expand="block" type="submit">ĐĂNG NHẬP</ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-text color="medium">
-            Chưa có tài khoản?
-          </ion-text>
-          <ion-text color="primary" routerLink="/menu/registry">
-            <b>Đăng ký</b>
-          </ion-text>
+          <ion-button color="primary" expand="block" type="submit" (click)="goToPageSuccess()">ĐĂNG KÝ</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
