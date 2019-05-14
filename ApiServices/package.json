@@ -1,0 +1,11 @@
+{
+  "name": "thuctaphmttapiservice",
+  "version": "1.0.0",
+  "description": "Api Service HMTT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hung Vuong",
+  "license": "ISC"
+}
