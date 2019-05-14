@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { NopHoSoUnregistryComponent } from './nop-ho-so-unregistry.component';
@@ -10,6 +11,7 @@ import { MatToolbarModule } from '@angular/material';
     imports: [
         IonicModule,
         MatToolbarModule,
+        RouterModule
     ],
     declarations: [NopHoSoUnregistryComponent],
     exports: [NopHoSoUnregistryComponent]
