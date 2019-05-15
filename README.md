@@ -60,3 +60,6 @@ https://stackoverflow.com/questions/41376147/remove-ion-item-divider
 
 ## Bugs
 - Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
+
+## Reports
+https://ithutech.github.io/thuctapsv/
