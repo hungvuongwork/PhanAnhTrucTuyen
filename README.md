@@ -59,7 +59,9 @@ https://stackoverflow.com/questions/425389/c-sharp-equivalent-of-sql-server-data
 https://stackoverflow.com/questions/41376147/remove-ion-item-divider
 
 - Reset Increment ID returns 0
+```
 DBCC CHECKIDENT (ThuTuc_NopHoSo, RESEED, 0)
+```
 
 ## Bugs
 - Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
