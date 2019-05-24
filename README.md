@@ -42,6 +42,10 @@ https://www.freakyjolly.com/ionic-4-how-to-use-ionic-modal-popovers-and-pass-dat
 - Create simple API Server with NodeJS and MSSQL
 https://www.codeproject.com/Articles/1239390/Creating-Simple-API-in-Node-js
 
+- Call Api in Angular 7
+https://www.techiediaries.com/angular-by-example-httpclient-get/
+https://angular.io/guide/http#making-a-post-request
+
 ## Fix bug
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
