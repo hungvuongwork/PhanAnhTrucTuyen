@@ -50,6 +50,10 @@ https://angular.io/guide/http#making-a-post-request
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
 
+- OPTIONS api net::ERR_CLEARTEXT_NOT_PERMITTED when build *.apk for Android
+https://stackoverflow.com/questions/52707918/webview-showing-err-cleartext-not-permitted-although-site-is-https
+
+
 ## Tips
 - When create new Ionic Project, please press command "ionic cordova prepare" to use command "ionic serve --devapp"
 
