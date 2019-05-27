@@ -46,6 +46,9 @@ https://www.codeproject.com/Articles/1239390/Creating-Simple-API-in-Node-js
 https://www.techiediaries.com/angular-by-example-httpclient-get/
 https://angular.io/guide/http#making-a-post-request
 
+- Debugging In NodeJS
+https://stackify.com/node-js-debugging-tips/
+
 ## Fix bug
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
