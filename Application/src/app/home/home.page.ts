@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
+import { MenuPage } from '../menu/menu.page';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +12,7 @@ import { AlertController } from '@ionic/angular';
 export class HomePage {
   isSearchBar: boolean = false;
   isMoreMenu: boolean = false;
+  userId: number;
 
   loadList(e): void {
     this.isSearchBar = false;
@@ -40,7 +43,7 @@ export class HomePage {
           text: 'Chấp nhận',
           cssClass: 'alertDanger',
           handler: () => {
-            if(isConfirmWith == 0) {
+            if (isConfirmWith == 0) {
               console.log('Confirm Okay for Khong duyet');
             }
             else {
@@ -54,5 +57,22 @@ export class HomePage {
     await alert.present();
   }
 
-  constructor(public alertController: AlertController) { }
+  getIdFromUrl(): void {
+    this.route.params.subscribe(params => {
+      this.userId = +params['id']; // (+) converts string 'id' to a number
+      //console.log(this.userId);
+      // In a real app: dispatch action to load the details here.
+    });
+  }
+
+  constructor(
+    private alertController: AlertController,
+    private route: ActivatedRoute,
+    private menuPage: MenuPage
+  ) { }
+
+  ngOnInit() {
+    this.getIdFromUrl();
+    this.menuPage.getNguoiDungById(this.userId);
+  }
 }
