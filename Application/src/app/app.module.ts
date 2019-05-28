@@ -13,11 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 //Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//My Modules
-
-//My Components
-
-//My Services
+//My Classes
 
 //My Modals
 import { ThanhPhanHoSoPageModule } from './page-nop-ho-so/modals/thanh-phan-ho-so/thanh-phan-ho-so.module';
@@ -33,7 +29,8 @@ import { ThanhPhanHoSoPageModule } from './page-nop-ho-so/modals/thanh-phan-ho-s
     //Angular Material Component
     BrowserAnimationsModule,
     //My Modals
-    ThanhPhanHoSoPageModule
+    ThanhPhanHoSoPageModule,
+    
   ],
   providers: [
     StatusBar,

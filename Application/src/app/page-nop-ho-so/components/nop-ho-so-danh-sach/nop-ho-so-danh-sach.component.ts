@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { LoadingController } from '@ionic/angular';
+import { NopHoSoQuaMangService } from '../../../services/nop-ho-so-qua-mang.service';
+
+import * as _ from '../../../../../node_modules/lodash';
+
 @Component({
   selector: 'app-nop-ho-so-danh-sach',
   templateUrl: './nop-ho-so-danh-sach.component.html',
@@ -8,30 +13,33 @@ import { Router } from '@angular/router';
 })
 export class NopHoSoDanhSachComponent implements OnInit {
 
-  danhSachHoSo: Object[] = [
-    {
-      name: 'LĨNH VỰC KINH TẾ',
-      danhSach: [
-        { title: 'Đăng ký thành lập hộ kinh doanh' },
-        { title: 'Đăng ký thay đổi nội dung đăng ký hộ kinh doanhh' },
-      ]
-    },
-    {
-      name: 'NHÀ ĐẤT',
-      danhSach: [
-        { title: 'ĐĂNG KÝ VÀ CẤP GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT, QUYỀN SỞ HỮU NHÀ Ở VÀ TÀI SẢN KHÁC GẮN LIỀN VỚI ĐẤT' },
-        { title: 'ĐĂNG KÝ BIẾN ĐỘNG KHÔNG CẤP MỚI GIẤY CHỨNG NHẬN (Xác nhận thay đổi trên Giấy chứng nhận)' },
-        { title: 'ĐĂNG KÝ BIẾN ĐỘNG CÓ CẤP MỚI GIẤY CHỨNG NHẬN' },
-      ]
+  danhSachHoSo: any;
+
+  async getDanhSachHoSo() {
+    const loading = await this.loadingController.create({
+      message: 'Đang tải dữ liệu'
+    });
+
+    await loading.present();
+
+    this.nopHSQMService.getDanhSachHoSo().subscribe(res => {
+      this.danhSachHoSo = _(res).groupBy(x => x.TenLinhVuc).map((value, key) => ({ TenLinhVuc: key, DanhSach: value })).value();
+      //console.log(this.danhSachHoSo);
+      loading.dismiss();
+    }), err => {
+      console.log(err);
+      loading.dismiss();
     }
-  ];
+  }
 
   goToNopHoSoSubmitDoc(): void {
     this.router.navigateByUrl('/menu/nop-ho-so-submitdoc');
   }
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public nopHSQMService: NopHoSoQuaMangService, public loadingController: LoadingController) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.getDanhSachHoSo();
+  }
 
 }

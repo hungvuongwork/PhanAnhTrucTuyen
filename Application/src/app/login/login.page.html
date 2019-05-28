@@ -2,7 +2,7 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-button routerLink="/menu/home" fill="clear">
+      <ion-button routerLink="/menu/home/0" fill="clear">
         <ion-icon slot="icon-only" name="close"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -11,7 +11,7 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  <form [formGroup]="userLoginForm" (ngSubmit)="onSubmitUserLoginForm()">
     <ion-grid>
       <ion-row>
         <ion-col class="ion-text-center">
@@ -21,14 +21,17 @@
       <ion-row>
         <ion-col>
           <mat-form-field class="input-full-width">
-            <input matInput placeholder="Tên đăng nhập" type="text">
+            <input matInput placeholder="Tên đăng nhập" type="text" formControlName="tenDangNhap">
+            <mat-error *ngIf="userLoginForm.controls.tenDangNhap.hasError('required')">Tên đăng nhập không được để trống.
+            </mat-error>
           </mat-form-field>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <mat-form-field class="input-full-width">
-            <input matInput placeholder="Mật khẩu" type="password">
+            <input matInput placeholder="Mật khẩu" type="password" formControlName="matKhau">
+            <mat-error *ngIf="userLoginForm.controls.matKhau.hasError('required')">Mật khẩu không được để trống.</mat-error>
           </mat-form-field>
         </ion-col>
       </ion-row>

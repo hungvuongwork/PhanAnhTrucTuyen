@@ -42,9 +42,20 @@ https://www.freakyjolly.com/ionic-4-how-to-use-ionic-modal-popovers-and-pass-dat
 - Create simple API Server with NodeJS and MSSQL
 https://www.codeproject.com/Articles/1239390/Creating-Simple-API-in-Node-js
 
+- Call Api in Angular 7
+https://www.techiediaries.com/angular-by-example-httpclient-get/
+https://angular.io/guide/http#making-a-post-request
+
+- Debugging In NodeJS
+https://stackify.com/node-js-debugging-tips/
+
 ## Fix bug
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
+
+- OPTIONS api net::ERR_CLEARTEXT_NOT_PERMITTED when build *.apk for Android
+https://stackoverflow.com/questions/52707918/webview-showing-err-cleartext-not-permitted-although-site-is-https
+
 
 ## Tips
 - When create new Ionic Project, please press command "ionic cordova prepare" to use command "ionic serve --devapp"
@@ -58,5 +69,13 @@ https://stackoverflow.com/questions/425389/c-sharp-equivalent-of-sql-server-data
 - Remove line of ion-item Ionic 4
 https://stackoverflow.com/questions/41376147/remove-ion-item-divider
 
+- Reset Increment ID returns 0
+```
+DBCC CHECKIDENT (ThuTuc_NopHoSo, RESEED, 0)
+```
+
 ## Bugs
 - Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
+
+## Reports
+https://ithutech.github.io/thuctapsv/
