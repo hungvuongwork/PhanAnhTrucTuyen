@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import { MatTabsModule, MatIconModule, MatDividerModule, MatCardModule } from '@angular/material';
 
 //My Modules
+import { GroupByModule } from '../../../common/group-by/group-by.module';
 
 //My Components
 import { NopHoSoRegistriedComponent } from './nop-ho-so-registried.component';
@@ -20,7 +21,8 @@ import { NopHoSoDaNopComponent } from '../nop-ho-so-da-nop/nop-ho-so-da-nop.comp
         MatTabsModule,
         MatIconModule,
         MatDividerModule,
-        MatCardModule
+        MatCardModule,
+        GroupByModule
     ],
     declarations: [NopHoSoRegistriedComponent, NopHoSoDanhSachComponent, NopHoSoDaNopComponent, NopHoSoDuyetComponent],
     exports: [NopHoSoRegistriedComponent]

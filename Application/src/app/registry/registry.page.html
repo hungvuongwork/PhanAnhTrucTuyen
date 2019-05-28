@@ -9,7 +9,7 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  <form [formGroup]="userRegisterForm" (ngSubmit)="onSubmitUserRegisterForm()">
     <ion-grid>
       <ion-row>
         <ion-col class="ion-text-center">
@@ -19,27 +19,46 @@
       <ion-row>
         <ion-col>
           <mat-form-field class="input-full-width">
-            <input matInput placeholder="Họ và tên" type="text">
+            <input matInput placeholder="Họ và tên" type="text" formControlName="tenHienThi">
+            <mat-error *ngIf="userRegisterForm.controls.tenHienThi.hasError('required')">Họ và tên không được để trống.</mat-error>
           </mat-form-field>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <mat-form-field class="input-full-width">
-            <input matInput placeholder="Tên đăng nhập" type="text">
+            <input matInput placeholder="Tên đăng nhập" type="text" formControlName="tenDangNhap">
+            <mat-error *ngIf="userRegisterForm.controls.tenDangNhap.hasError('required')">Tên đăng nhập không được để trống.</mat-error>
           </mat-form-field>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <mat-form-field class="input-full-width">
-            <input matInput placeholder="Mật khẩu" type="password">
+            <input matInput placeholder="Mật khẩu" type="password" formControlName="matKhau">
+            <mat-error *ngIf="userRegisterForm.controls.matKhau.hasError('required')">Mật khẩu không được để trống.</mat-error>
           </mat-form-field>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button color="primary" expand="block" type="submit" (click)="goToPageSuccess()">ĐĂNG KÝ</ion-button>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Số chứng minh nhân dân" type="number" formControlName="soCMND">
+            <mat-error *ngIf="userRegisterForm.controls.soCMND.hasError('required')">Số CMND không được để trống.</mat-error>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <mat-form-field class="input-full-width">
+            <input matInput placeholder="Số điện thoại" type="tel" formControlName="soDT">
+            <mat-error *ngIf="userRegisterForm.controls.soDT.hasError('required')">Số điện thoại không được để trống.</mat-error>
+          </mat-form-field>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="primary" expand="block" type="submit">ĐĂNG KÝ</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

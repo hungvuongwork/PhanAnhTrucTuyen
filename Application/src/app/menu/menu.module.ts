@@ -19,7 +19,7 @@ const routes: Routes = [
     component: MenuPage,
     children: [
       {
-        path: 'home',
+        path: 'home/:id',
         loadChildren: '../home/home.module#HomePageModule'
       },
       {
@@ -50,7 +50,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/menu/home',
+    redirectTo: '/menu/home/0',
   }
 ];
 

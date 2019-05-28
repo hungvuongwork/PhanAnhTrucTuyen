@@ -7,7 +7,11 @@
           <img src="../../assets/employees.svg">
         </div>
         <p>
-          <b>Xin chào, Ông/Bà</b>
+          <b>
+            Xin chào,
+            <ion-text *ngIf="nguoiDungById.length == 0">Ông/Bà</ion-text>
+            <ion-text *ngIf="nguoiDungById.length != 0">{{nguoiDungById[0].TenHienThi}}</ion-text>
+          </b>
           <br>
           <i>Chúc một ngày tốt lành!</i>
         </p>
@@ -16,12 +20,37 @@
 
     <ion-content no-padding>
       <ion-list>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="goToHomePage(userId)" class.active-item="selectedPath === link.url">
+            <ion-icon name="home" slot="start"></ion-icon>
+            Trang chủ
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list>
         <ion-menu-toggle auto-hide="false" *ngFor="let link of menuLinks">
-          <ion-item lines="none" [routerLink]="link.url" routerDirection="root"
-            [class.active-item]="selectedPath === link.url">
+          <ion-item lines="none" [routerLink]="link.name === 'home' ? [link.url, userId] : link.url"
+            routerDirection="root" [class.active-item]="selectedPath === link.url">
             <ion-icon [name]="link.icon" slot="start"></ion-icon>
-            <!-- <mat-icon>{{link.icon}}</mat-icon> -->
             {{link.title}}
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <!-- Login / Register -->
+      <ion-list>
+        <ion-menu-toggle *ngIf="userId === 0" auto-hide="false">
+          <ion-item lines="none" routerLink="/menu/login" routerDirection="root"
+            class.active-item="selectedPath === /menu/login">
+            <ion-icon name="people" slot="start"></ion-icon>
+            Đăng nhập
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle *ngIf="userId != 0" auto-hide="false">
+          <ion-item lines="none" (click)="logout()">
+            <ion-icon name="log-out" slot="start"></ion-icon>
+            Đăng xuất
           </ion-item>
         </ion-menu-toggle>
       </ion-list>
