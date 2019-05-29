@@ -45,7 +45,6 @@ https://www.codeproject.com/Articles/1239390/Creating-Simple-API-in-Node-js
 - Call Api in Angular 7
 	+ https://www.techiediaries.com/angular-by-example-httpclient-get/
 	+ https://angular.io/guide/http#making-a-post-request
-	+ https://ionicacademy.com/pass-data-angular-router-ionic-4/
 
 - Debugging In NodeJS
 https://stackify.com/node-js-debugging-tips/
