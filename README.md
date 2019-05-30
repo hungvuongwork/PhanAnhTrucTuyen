@@ -64,7 +64,14 @@ https://stackoverflow.com/questions/52707918/webview-showing-err-cleartext-not-p
 
 
 ## Tips
-- When create new Ionic Project, please press command "ionic cordova prepare" to use command "ionic serve --devapp"
+- When create new Ionic Project, please press command 
+```
+ionic cordova prepare
+``` 
+and to press command
+```
+ ionic serve --devapp
+```
 
 - Designed: Bottom mat-tabs Angular Material in Ionic 4
 	+ Css: position: sticky; bottom: 0; (Try if you make sure that ion-content can scroll)
