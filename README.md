@@ -87,6 +87,17 @@ https://stackoverflow.com/questions/41376147/remove-ion-item-divider
 DBCC CHECKIDENT (ThuTuc_NopHoSo, RESEED, 0)
 ```
 
+- Wrap Item into ion-item with:
+```
+<ion-item>
+	<ion-grid>
+		<ion-row class="flex-wrap">
+			<ion-col></ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-item>
+```
+
 ## Bugs
 - Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
 
