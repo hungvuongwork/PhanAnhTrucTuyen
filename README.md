@@ -63,7 +63,7 @@ https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-t
 https://stackoverflow.com/questions/52707918/webview-showing-err-cleartext-not-permitted-although-site-is-https
 
 
-## Tips
+## Back-End Tips
 - When create new Ionic Project, please press command 
 ```
 ionic cordova prepare
@@ -73,14 +73,8 @@ and to press command
 ionic serve --devapp
 ```
 
-- Designed: Bottom mat-tabs Angular Material in Ionic 4
-	+ Css: position: sticky; bottom: 0; (Try if you make sure that ion-content can scroll)
-
 - Data Types SQL and C# Mapping
 https://stackoverflow.com/questions/425389/c-sharp-equivalent-of-sql-server-datatypes
-
-- Remove line of ion-item Ionic 4
-https://stackoverflow.com/questions/41376147/remove-ion-item-divider
 
 - Reset Increment ID returns 0
 ```
@@ -97,6 +91,16 @@ DBCC CHECKIDENT (ThuTuc_NopHoSo, RESEED, 0)
 	</ion-grid>
 </ion-item>
 ```
+
+## Front-End Tips
+- Designed: Bottom mat-tabs Angular Material in Ionic 4
+	+ Css: position: sticky; bottom: 0; (Try if you make sure that ion-content can scroll)
+
+- Remove line of ion-item Ionic 4
+https://stackoverflow.com/questions/41376147/remove-ion-item-divider
+
+- Css Box-shadow
+http://cssdeck.com/labs/pure-css3-apples-ios-icons
 
 ## Bugs
 - Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
