@@ -105,5 +105,8 @@ http://cssdeck.com/labs/pure-css3-apples-ios-icons
 ## Bugs
 - Icon trong kỹ thuật lồng tabs chưa hoàn chỉnh!
 
+## Upgrade
+- Chuyển loading list bằng cách sử ion-skeleton-text
+
 ## Reports
 https://ithutech.github.io/thuctapsv/
