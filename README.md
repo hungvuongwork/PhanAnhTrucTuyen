@@ -70,7 +70,7 @@ ionic cordova prepare
 ``` 
 and to press command
 ```
- ionic serve --devapp
+ionic serve --devapp
 ```
 
 - Designed: Bottom mat-tabs Angular Material in Ionic 4
