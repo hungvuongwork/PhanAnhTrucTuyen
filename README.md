@@ -64,7 +64,8 @@ https://stackoverflow.com/questions/52707918/webview-showing-err-cleartext-not-p
 ```
 platforms/android/src/main/AndroidManifest.xml
 ```
-
+- Resolved Camera Plugin restart App
+https://forum.ionicframework.com/t/ionic-camera-restarts-app/80648/12
 
 ## Back-End Tips
 - When create new Ionic Project, please press command 
