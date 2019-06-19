@@ -49,7 +49,7 @@ https://www.codeproject.com/Articles/1239390/Creating-Simple-API-in-Node-js
 - Debugging In NodeJS
 https://stackify.com/node-js-debugging-tips/
 
-- Upload Mutiple Files in Nodejs 
+- Upload Multiple Files in Nodejs 
 	+ https://blog.eduonix.com/web-programming-tutorials/learn-build-upload-multiple-files-using-nodejs/
 	+ https://code.tutsplus.com/tutorials/file-upload-with-multer-in-node--cms-32088
 - Check Folder Exists using multer in Nodejs
