@@ -55,6 +55,9 @@ https://stackify.com/node-js-debugging-tips/
 - Check Folder Exists using multer in Nodejs
 	+ https://github.com/expressjs/multer/issues/287
 
+-Update data menu when login Ionic 4 by use Events
+https://ionicframework.com/docs/v3/api/util/Events/
+
 ## Fix bug
 - Fix ion-tabs overlap ion-header
 https://forum.ionicframework.com/t/tabs-in-nested-view-top-with-ion-navbar-top-too/56311/12
