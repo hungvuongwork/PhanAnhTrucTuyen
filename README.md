@@ -1,4 +1,4 @@
-# ThucTap_HMTT
+# [Internship] PhanAnhTrucTuyen
 The purpose of this project is intership of Hutech University. It uses Angular Material 7 and Ionic Framework 4 to develope.
 
 ## Installing
